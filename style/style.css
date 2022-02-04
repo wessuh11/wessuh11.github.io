@@ -3,8 +3,59 @@
 
 
 /* main#main 시작*/
+main#main {
+    width: 80%;
+    margin: 0 auto;
+}
 
 /* div#title 시작 */
-
-
+#main div#title h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
 /* div#title 끝 */
+
+/* div#profile 시작 */
+/* section#bio 시작 */
+#main #profile section#bio {
+    width: 25%;
+}
+#main #profile #bio div#picWrapper {
+    position: relative;
+    padding-top: 80%;
+    overflow: hidden;
+}
+#main #profile #bio div#picWrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 50%;
+    height: auto;
+}
+
+#main #profile #bio #profileTbl img {
+    width: 50px;
+    height: auto;
+}
+/* section#bio 끝 */
+
+/* section#detailedBio 시작 */
+#main #profile section#detailedBio {
+    flex: 1;
+}
+
+#main #profile #detailedBio #selfIntro .historyDate::after {
+    width: 20px;
+    height: 20px;
+    border: 5px solid #000;
+    border-radius: 100%;
+
+    background-color: #000;
+
+    content: "";
+    
+}
+/* section#detailedBio 끝 */
+
+/* div#profile 끝 */
