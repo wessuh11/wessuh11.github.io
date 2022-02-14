@@ -4,29 +4,25 @@
 
 /* main#main 시작*/
 main#main {
-    width: 80%;
-    margin: 0 auto;
+    justify-content: space-around;
 }
 
-/* div#title 시작 */
-#main div#title h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-/* div#title 끝 */
+.swiper {
+    width: 100%;
+    height: 810px;
+  }
 
-/* div#profile 시작 */
-/* section#bio 시작 */
-#main #profile section#bio {
+/* div#bio 시작 */
+#main div#bio {
     width: 25%;
+    flex: 1;
 }
-#main #profile #bio div#picWrapper {
+#main #bio div#picWrapper {
     position: relative;
     padding-top: 80%;
     overflow: hidden;
 }
-#main #profile #bio div#picWrapper img {
+#main #bio div#picWrapper img {
     position: absolute;
     top: 0;
     left: 0;
@@ -34,18 +30,24 @@ main#main {
     height: auto;
 }
 
-#main #profile #bio #profileTbl img {
+#main #bio #profileTbl img {
     width: 50px;
     height: auto;
 }
-/* section#bio 끝 */
+/* div#bio 끝 */
 
-/* section#detailedBio 시작 */
-#main #profile section#detailedBio {
-    flex: 1;
+/* div#profile 시작 */
+/* div#title 시작 */
+#main #profile section#title h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
+/* div#title 끝 */
+
+/* section#intro 시작 */
 /*  연혁  */
-#main #profile #detailedBio #selfIntro p .historyDate::after {
+#main #profile #intro #selfIntro p .historyDate::after {
     width: 5px;
     height: 5px;
     border: 3px solid #000;
@@ -58,10 +60,53 @@ main#main {
     content: "";
 }
 
-#main #profile #detailedBio #skill table#skillSet td {
+/* #main #profile #intro #skill table#skillSet td {
     border: 1px solid #000;
     border-collapse: collapse;
+} */
+
+#main #profile #intro div#skill {
+    height: 402px;
+    margin: 0 auto;
+
+    background-image: url(../img/SkillSet-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-/* section#detailedBio 끝 */
+/* section#intro 끝 */
+
+/* div#portfolio 시작 */
+#main div#portfolio {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+#main #portfolio div.inspiredImg {
+    justify-content: space-around;
+} 
+
+#main #portfolio .inspiredImg img {
+    width: 20%;
+}
+
+#main #portfolio div.plan-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 425px;
+    background-image: url(../img/Proj_Plan.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* div#portfolio 끝 */
 
 /* div#profile 끝 */
+
+/* nav#sidebar 시작 */
+#wrap #sidebar #sideUl li img {
+    width: 12.5%;
+}
+
+/* nav#sidebar 끝 */
+
+
