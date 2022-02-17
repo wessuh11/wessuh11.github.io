@@ -1,22 +1,26 @@
 @charset "UTF-8";
 @import url(style_Reset.css);
 
+div#wrap {
+    width: 90%;
+    margin: 0 auto;
+
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* main#main 시작*/
 main#main {
-    justify-content: space-around;
+    width: 87.5%;
+    height: 675px;
 }
-
-.swiper {
-    width: 100%;
-    height: 810px;
-  }
 
 /* div#bio 시작 */
 #main div#bio {
-    width: 25%;
-    flex: 1;
+    width: 30%;
+    margin-right: 10px;
 }
+
 #main #bio div#picWrapper {
     position: relative;
     padding-top: 80%;
@@ -28,6 +32,11 @@ main#main {
     left: 0;
     max-width: 50%;
     height: auto;
+}
+
+#main #bio #profileTbl tr {
+    display: inline-block;
+    padding: 3px 0;
 }
 
 #main #bio #profileTbl img {
@@ -93,10 +102,14 @@ main#main {
 #main #portfolio div.plan-container {
     width: 80%;
     margin: 0 auto;
-    height: 425px;
+    height: 250px;
     background-image: url(../img/Proj_Plan.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#main #portfolio div.role img {
+    max-width: 500px;
 }
 /* div#portfolio 끝 */
 
@@ -106,7 +119,26 @@ main#main {
 #wrap #sidebar #sideUl li img {
     width: 12.5%;
 }
-
 /* nav#sidebar 끝 */
 
+.swiper-slide {
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* scrollbar */
+    overflow-y: auto;
+}
 
