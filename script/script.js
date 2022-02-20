@@ -1,6 +1,6 @@
 $(function() {
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper-container', {
       // Optional parameters
       direction: 'vertical',
       loop: true,
@@ -22,13 +22,35 @@ $(function() {
         el: '.swiper-scrollbar',
       },
       
+      // height: 600,
+
       autoHeight: true,
       // freeMode: true,
       // mousewheel: true,
       // watchOverflow: false,
+      // observer: true,
+      // observeParents: true,
+      // ResizeObserver: false,
+
     });
 
-  $('.summaries').click(function(){
-    $('.swiper-slide').scrolltop(0);
-  });
+    
+    function applyMt (marginChange) {
+      
+      let marginReceiverCM = 400;
+      let mt = marginReceiverCM + marginChange;
+      $('.marginReceiver').css('margin-top', mt+'px' );
+
+    }
+
+    $('.pt1Details').on('toggle', function() {
+      let dHeight = 0;
+      
+      $('.pt1Details[open]').each(function(index, element) {
+        dHeight += $(this).height();
+      });
+      
+      applyMt(dHeight);
+    });
+
 });
