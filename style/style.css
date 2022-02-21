@@ -7,31 +7,31 @@ div#wrap {
     margin: 10vh auto;
     border-radius: 10%;
 
-    background-color: rgba(255, 255, 255, 0.9);
     justify-content: space-around;
     align-items: center;
 
     overflow: hidden;
 }
 
-/* main#main 시작*/
-main#main {
-    width: 100%;
-    height: 100%;
-    
-    justify-content: center;
-    align-items: center;
-    
-    flex: 9;
+div#wrap>* {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* div#bio 시작 */
-#main div#bio {
+#wrap div#bio {
+    height: 100%;
     margin-right: 10px;
     flex: 1;
+
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#main #bio div#picWrapper {
+#bio div#picWrapper {
+    width: 100%;
+    height: auto;
     position: relative;
     padding-top: 80%;
     overflow: hidden;
@@ -39,7 +39,7 @@ main#main {
     left: 50%;
     transform: translateX(-35%);    
 }
-#main #bio div#picWrapper img {
+#bio div#picWrapper img {
     max-width: 60%;
     height: auto;
     border-radius: 20%;
@@ -50,24 +50,41 @@ main#main {
     left: 0;
 }
 
-#main #bio table#profileTbl {
+#bio table#profileTbl {
     margin-top: 10px;
 }
-#main #bio #profileTbl tr {
+#bio #profileTbl tr {
+    width: 100%;
+
     display: inline-block;
     padding: 3px 0;
 }
 
-#main #bio #profileTbl img {
+#bio #profileTbl tr:last-child td {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#bio #profileTbl img {
     width: 50px;
     height: auto;
 }
 /* div#bio 끝 */
 
-/* div#mainSec 시작 */
-#main #mainSec {
-    flex: 9;
+/* main#main 시작*/
+main#main {
+    width: 100%;
+    height: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    
+    flex: 8;
 }
+
+
+/* div#mainSec 시작 */
 
 /* div#profile 시작 */
 /* div#title 시작 */
@@ -141,9 +158,28 @@ main#main {
 
 /* nav#sidebar 시작 */
 #wrap #sidebar {
-    margin: 0 auto;
+    height: 100%;
+    margin-left: 10px;
     flex: 1;
+
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+#wrap #sidebar ul li {
+    padding: 3px 0;
+    
+    display: inline-flex;
+    justify-content: center;
+}
+
+#wrap #sidebar ul li.navi {
+    cursor: pointer;
+}
+
 #wrap #sidebar #sideUl li img {
     width: 25%;
 }

@@ -13,36 +13,37 @@
 </head>
 <body>
     <div id="wrap" class="flex-container">
-        <main id="main" class="flex-container swiper-container">
-            <div id="bio">
-                <div id="picWrapper">
-                    <img src="img/CD 명함사이즈.jpg" alt="명함사진" id="pic">
-                </div>
-    
-                <table id="profileTbl">
-                    <tbody>
-                        <tr>
-                            <td>서형원</td>
-                        </tr>
-                        <tr>
-                            <td>010-2503-9339</td>
-                        </tr>
-                        <tr>
-                            <td>서울시 서대문구</td>
-                        </tr>
-                        <tr>
-                            <td>wessuh11@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <th colspan="2">
-                                <a href="mailto: wessuh11@gmail.com"><img src="img/premium-icon-gmail-2335418.png" alt="G메일"></a>
-                                <a href="https://github.com/wessuh11" target="_blank"><img src="img/premium-icon-github-3488426.png" alt="Github 아이콘" ></a>
-                            </th>
-                        </tr>
-                    </tbody>
-                </table>
+        <div id="bio">
+            <div id="picWrapper">
+                <img src="img/CD 명함사이즈.jpg" alt="명함사진" id="pic">
             </div>
-            <!-- div#bio -->
+
+            <table id="profileTbl">
+                <tbody>
+                    <tr>
+                        <td>서형원</td>
+                    </tr>
+                    <tr>
+                        <td>010-2503-9339</td>
+                    </tr>
+                    <tr>
+                        <td>서울시 서대문구</td>
+                    </tr>
+                    <tr>
+                        <td>wessuh11@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="mailto: wessuh11@gmail.com"><img src="img/premium-icon-gmail-2335418.png" alt="G메일"></a>
+                            <a href="https://github.com/wessuh11" target="_blank"><img src="img/premium-icon-github-3488426.png" alt="Github 아이콘" ></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- div#bio -->
+
+        <main id="main" class="flex-container swiper-container">
             
             <div id="mainSec" class="swiper-wrapper">
                 <div id="title" class="swiper-slide">
@@ -152,9 +153,16 @@
                 <!-- div#portfolio -->
     
                 <div id="credit" class="swiper-slide">
-                    h2
-                    <a href="https://www.flaticon.com/kr/free-icons/gmail" title="gmail 아이콘">Gmail 아이콘  제작자: justicon - Flaticon</a><br>
+                    <h2>Attribution</h2>
+                    <br>
+                    <a href="https://www.flaticon.com/kr/free-icons/gmail" title="gmail 아이콘">Gmail 아이콘  제작자: justicon - Flaticon</a>
                     <a href="https://www.flaticon.com/kr/free-icons/github" title="github 아이콘">Github 아이콘  제작자: IconsBox - Flaticon</a>
+                    
+                    <a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Ilham Fitrotul Hayat - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/profile" title="profile icons">Profile icons created by Prosymbols Premium - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/portfolio" title="portfolio icons">Portfolio icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/source" title="source icons">Source icons created by noomtah - Flaticon</a>
+
                     <a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by maulaga - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/back-arrow" title="back arrow icons">Back arrow icons created by maulaga - Flaticon</a>
                 </div>
@@ -166,10 +174,26 @@
 
         <nav id="sidebar">
             <ul id="sideUl">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="navi">
+                    <img src="img/home.png" alt="home">
+                    <!-- Home -->
+                    <input type="hidden" value="1">
+                </li>
+                <li class="navi">
+                    <img src="img/cv.png" alt="Intro">
+                    <!-- Intro -->
+                    <input type="hidden" value="2">
+                </li>
+                <li class="navi">
+                    <img src="img/portfolio.png" alt="portfolio">
+                    <!-- Portfolio -->
+                    <input type="hidden" value="3">
+                </li>
+                <li class="navi">
+                    <img src="img/supporting.png" alt="supporting">
+                    <!-- Credit -->
+                    <input type="hidden" value="4">
+                </li>
                 <li class="next"><img src="img/next-button.png" alt="next-button"></li>
                 <li class="prev"><img src="img/back-arrow.png" alt="back-button"></div></li>
             </ul>

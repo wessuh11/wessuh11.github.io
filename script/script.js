@@ -1,5 +1,6 @@
 $(function() {
 
+  ////////////////////////////////////////////////////// swiper 시작
   const swiper = new Swiper('.swiper-container', {
       // Optional parameters
       direction: 'vertical',
@@ -33,8 +34,10 @@ $(function() {
       // ResizeObserver: false,
 
     });
-
+    ////////////////////////////////////////////////////// swiper 끝
     
+    ////////////////////////////////////////////////////// details margin-top 문제 수정시작
+
     function applyMt (marginChange) {
       
       let marginReceiverCM = 400;
@@ -52,5 +55,13 @@ $(function() {
       
       applyMt(dHeight);
     });
+    ////////////////////////////////////////////////////// details margin-top 문제 수정 끝
+
+    ///////////////////////////////////////////////////// nav 시작
+    $('.navi').click(function(){
+      let idx = $(this).children('input').val();
+      swiper.slideTo(idx, 1000, false);
+    });
+    ///////////////////////////////////////////////////// nav 끝
 
 });
