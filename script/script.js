@@ -40,7 +40,7 @@ $(function() {
 
     function applyMt (marginChange) {
       
-      let marginReceiverCM = 400;
+      let marginReceiverCM = 550;
       let mt = marginReceiverCM + marginChange;
       $('.marginReceiver').css('margin-top', mt+'px' );
 
@@ -60,7 +60,7 @@ $(function() {
     ///////////////////////////////////////////////////// nav 시작
     $('.navi').click(function(){
       let idx = $(this).children('input').val();
-      swiper.slideTo(idx, 1000, false);
+      swiper.slideTo(idx, 500, false);
     });
     ///////////////////////////////////////////////////// nav 끝
 

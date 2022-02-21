@@ -52,7 +52,7 @@
                 <!-- div#title -->
 
                 <div id="profile" class="swiper-slide">
-                    <section id="intro">
+                    <section id="intro" class="flex-container">
                         <div id="selfIntro">
                             <h2 class="subTitle">Introduced by</h2>
                             <p>
@@ -61,18 +61,28 @@
     
                             <h2 class="subTitle">Educated by</h2>
     
-                            <p>
-                                <span class="historyDate">
-                                    2021. 6. ~ 2022. 1. (이젠아카데미 - 신촌) 
-                                </span>
-                                백엔드 웹 프로그램 개발, 자바 응용 프로그램, 자바 웹 응용프로그램, DBMS, 파이썬
-                            </p>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2021. 6. ~ 2022. 1.<br> 
+                                            (이젠아카데미)
+                                        </td>
+                                        <td class="historyDate"></td>
+                                        <td>
+                                            백엔드 웹 프로그램 개발, 자바 응용 프로그램, 
+                                            자바 웹 응용프로그램, DBMS, 파이썬
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <!-- div#selfIntro -->
     
                         <div id="skill">
                             <h2>SkillSet</h2>
-                            <img src="img/SkillSet-removebg-preview.png" alt="스킬셋">
+                            <div id="skillSetImg-Container">
+                                <img src="img/SkillSet-removebg-preview.png" alt="스킬셋">
+                            </div>
                             <!-- <table id="skillSet">
                                 <thead>
                                     <th colspan="4">SkillSet</th>
@@ -194,6 +204,8 @@
                     <!-- Credit -->
                     <input type="hidden" value="4">
                 </li>
+                <br>
+                <br>
                 <li class="next"><img src="img/next-button.png" alt="next-button"></li>
                 <li class="prev"><img src="img/back-arrow.png" alt="back-button"></div></li>
             </ul>
