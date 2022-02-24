@@ -40,7 +40,7 @@ $(function() {
 
     function applyMt (marginChange) {
       
-      let marginReceiverCM = 550;
+      let marginReceiverCM = 800;
       let mt = marginReceiverCM + marginChange;
       $('.marginReceiver').css('margin-top', mt+'px' );
 
@@ -61,7 +61,21 @@ $(function() {
     $('.navi').click(function(){
       let idx = $(this).children('input').val();
       swiper.slideTo(idx, 500, false);
+      naviClass(idx);
     });
+
+    swiper.on('slideChangeTransitionEnd', function(){
+      let idx = $('.swiper-slide-active').attr('data-swiper-slide-index');
+      idx = Number(idx)+1;
+      naviClass(idx);
+    });
+
+    function naviClass (idx) {
+      let naviId = '#navi' + idx;
+      $('.navi').removeClass('navi-Active');
+      $(naviId).addClass('navi-Active');
+    }
     ///////////////////////////////////////////////////// nav 끝
+
 
 });

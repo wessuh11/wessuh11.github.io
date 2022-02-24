@@ -2,14 +2,14 @@
 @import url(style_Reset.css);
 
 h2, h4 {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 div#wrap {
     width: 80vw;
     height: 80vh;
     margin: 10vh auto;
-    border-radius: 10%;
+    border-radius: 5%;
 
     justify-content: space-around;
     align-items: center;
@@ -41,7 +41,7 @@ div#wrap>* {
     overflow: hidden;
 
     left: 50%;
-    transform: translateX(-35%);    
+    transform: translateX(-30%);    
 }
 #bio div#picWrapper img {
     max-width: 60%;
@@ -55,6 +55,7 @@ div#wrap>* {
 }
 
 #bio table#profileTbl {
+    padding: 0 8px;
     margin-top: 10px;
 }
 #bio #profileTbl tr {
@@ -64,10 +65,14 @@ div#wrap>* {
     padding: 3px 0;
 }
 
+#bio #profileTbl tr td  {
+    font-size: 25px;
+}
+
 #bio #profileTbl tr:last-child td {
     width: 100%;
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #bio #profileTbl img {
@@ -91,21 +96,24 @@ main#main {
 /* div#mainSec 시작 */
 
 /* div#title 시작 */
-#main #profile section#title h1 {
-    font-size: 30px;
-    font-weight: bold;
+#main #mainSec div#title h1 {
+    font-size: 50px;
+    font-weight: normal;
     text-align: center;
 }
 /* div#title 끝 */
 
 /* div#profile 시작 */
 #main #profile section#intro {
+    font-size: 20px;
+
     align-items: center;
     justify-content: space-around;
 }
 
 #main #profile #intro #selfIntro {
     width: 40%;
+
 }
 
 /*  연혁 시작 */
@@ -118,16 +126,18 @@ main#main {
     height: 15px;
     border: 3px solid #000;
     border-radius: 100%;
-    margin: 25px 10px 25px -5px;
+    margin: 25px 15px 25px 0px;
 
-    background-color: #fff;
+    background-color: rgba(238, 238, 238, 0.9);
+
+;
     
     display: inline-block;
     content: "";
 }
 /* 연혁 끝 */
 #main #profile #intro h2 {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 #main #profile #intro #skill {
@@ -162,17 +172,16 @@ main#main {
 
 /* div#portfolio 시작 */
 #main div#portfolio {
-    width: 80%;
-    margin: 0 auto;
+    font-size: 25px;
 }
 
 #main #portfolio .marginReceiver {
     display: inline-block;
-    margin-top: 550px;
+    margin-top: 800px;
 }
 
 #main #portfolio div.inspiredImg {
-    justify-content: space-around;
+    justify-content: center;
 } 
 
 #main #portfolio .inspiredImg img {
@@ -183,10 +192,22 @@ main#main {
     max-width: 500px;
 }
 
+main #portfolio .role details span {
+    margin: 20px 0;
+
+    display: inline-block;
+}
+
 #main #portfolio div.role img {
     width: 100%;
 }
 /* div#portfolio 끝 */
+
+/* div#attribution 시작 */
+#main #attribution {
+    font-size: 25px;
+}
+/* div#attribution 끝 */
 
 /* div#mainSec 끝 */
 
@@ -213,7 +234,9 @@ main#main {
 #wrap #sidebar ul li.navi {
     cursor: pointer;
 }
-
+#wrap #sidebar ul li.navi-Active {
+    background-color: rgba(221, 221, 221, 0.9);
+}
 #wrap #sidebar #sideUl li img {
     width: 25%;
 }
@@ -241,6 +264,7 @@ main#main {
 
     /* scrollbar */
     overflow-y: auto;
-
 }
+
+
 
