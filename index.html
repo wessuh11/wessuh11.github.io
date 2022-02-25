@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wessuh11의 Portfolio에 오신 것을 환영합니다.</title>
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -46,12 +46,12 @@
         <main id="main" class="flex-container swiper-container">
             
             <div id="mainSec" class="swiper-wrapper">
-                <div id="title" class="swiper-slide" data-hash="slide1">
+                <div id="title" class="swiper-slide" data-hash="title">
                     <h1>포트폴리오 페이지에 와주셔서 감사합니다.</h1>
                 </div>
                 <!-- div#title -->
 
-                <div id="profile" class="swiper-slide" data-hash="slide2">
+                <div id="profile" class="swiper-slide" data-hash="profile">
                     <section id="intro" class="flex-container">
                         <div id="selfIntro">
                             <h2 class="subTitle">Introduced by</h2>
@@ -113,7 +113,7 @@
                     <!-- section#intro -->
                 </div>
     
-                <div id="portfolio" class="swiper-slide" data-hash="slide3">
+                <div id="portfolio" class="swiper-slide" data-hash="portfolio">
                     <h2 class="marginReceiver">OnedayClass Platform</h2#>
     
                     <h4>개발목적</h4>
@@ -139,22 +139,23 @@
                         <details class="pt1Details">
                             <summary class="summaries">로그인 / 회원가입</summary>
                             <span>Session 인증을 통한 로그인 및 회원등급에 맞는 로그인 화면</span>
-                            <img src="img/PT_1/SignUp_1.png" alt="회원가입" class="pic1">
-                            <img src="img/PT_1/SignUp_2.png" alt="회원가입" class="pic2">
-                            <img src="img/PT_1/SignUp_3.png" alt="로그인" class="pic3">
+                            <img src="img/PT_1/SignUp_1.png" alt="회원가입">
+                            <img src="img/PT_1/SignUp_2.png" alt="회원가입">
+                            <img src="img/PT_1/SignUp_3.png" alt="로그인">
                         </details>
                         <details class="pt1Details">
                             <summary class="summaries">Q & A Board</summary>
                             <span>클래스 상세 페이지에 해당 클래스 각각의 Q&A를 AJAX로 적용</span>
-                            <img src="img/PT_1/Q&A_1.png" alt="QnA" class="pic1">
-                            <img src="img/PT_1/Q&A_2.png" alt="QnA" class="pic2">
+                            <img src="img/PT_1/Q&A_1.png" alt="QnA">
+                            <img src="img/PT_1/Q&A_2.png" alt="QnA">
                         </details>
                         <details class="pt1Details">
                             <summary class="summaries">장바구니 / 결제</summary>
                             <span>Session에 장바구니 안의 수업 갯수를 넣는 것과 iamport API를 사용한 카카오페이 구축</span>
-                            <img src="img/PT_1/pay_1.png" alt="장바구니" class="pic1">
-                            <img src="img/PT_1/pay_2.png" alt="결제" class="pic2">
-                            <img src="img/PT_1/pay_3.png" alt="결제" class="pic3">
+                            <img src="img/PT_1/pay_1.png" alt="장바구니">
+                            <img src="img/PT_1/pay_2.png" alt="결제">
+                            <img src="img/PT_1/pay_3.png" alt="결제">
+                            <img src="img/PT_1/pay_4.png" alt="결제완료">
                         </details>
                     </div>
                     <!-- div.role -->
@@ -162,7 +163,7 @@
                 </div>
                 <!-- div#portfolio -->
     
-                <div id="attribution" class="swiper-slide" data-hash="slide4">
+                <div id="attribution" class="swiper-slide" data-hash="attribution">
                     <h2>Attribution</h2>
                     <br>
                     <a href="https://www.flaticon.com/kr/free-icons/gmail" title="gmail 아이콘">Gmail 아이콘  제작자: justicon - Flaticon</a>
@@ -184,25 +185,29 @@
 
         <nav id="sidebar">
             <ul id="sideUl">
-                <li id="navi1" class="navi navi-Active">
+                <li id="title-Navi" class="navi navi-Active">
                     <img src="img/home.png" alt="home">
                     <!-- Home -->
-                    <input type="hidden" value="0">
+                    <input type="hidden" value="0" class="slideIdx">
+                    <input type="hidden" value="title" class="slideName">
                 </li>
-                <li id="navi2" class="navi">
+                <li id="profile-Navi" class="navi">
                     <img src="img/cv.png" alt="Intro">
                     <!-- Intro -->
-                    <input type="hidden" value="1">
+                    <input type="hidden" value="1" class="slideIdx">
+                    <input type="hidden" value="profile" class="slideName">
                 </li>
-                <li id="navi3" class="navi">
+                <li id="portfolio-Navi" class="navi">
                     <img src="img/portfolio.png" alt="portfolio">
                     <!-- Portfolio -->
-                    <input type="hidden" value="2">
+                    <input type="hidden" value="2" class="slideIdx">
+                    <input type="hidden" value="portfolio" class="slideName">
                 </li>
-                <li id="navi4" class="navi">
+                <li id="attribution-Navi" class="navi">
                     <img src="img/supporting.png" alt="supporting">
                     <!-- Credit -->
-                    <input type="hidden" value="3">
+                    <input type="hidden" value="3" class="slideIdx">
+                    <input type="hidden" value="attribution" class="slideName">
                 </li>
                 <br>
                 <br>

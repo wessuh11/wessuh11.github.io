@@ -40,7 +40,7 @@ $(function() {
 
     function applyMt (marginChange) {
       
-      let marginReceiverCM = 800;
+      let marginReceiverCM = 700;
       let mt = marginReceiverCM + marginChange;
       $('.marginReceiver').css('margin-top', mt+'px' );
 
@@ -59,21 +59,20 @@ $(function() {
 
     ///////////////////////////////////////////////////// nav 시작
     $('.navi').click(function(){
-      let idx = $(this).children('input').val();
+      let idx = $(this).children('.slideIdx').val();
+      let slideName = $(this).children('.slideName').val();
       idx = Number(idx);
       swiper.slideTo(idx, 500, false);
-      naviClass(idx+1);
+      naviClass(slideName);
     });
 
     swiper.on('slideChangeTransitionStart', function(){
       let idx = $('.swiper-slide-active').attr('data-hash');
-      idx = idx.replace('slide', '');
-      idx = Number(idx);
       naviClass(idx);
     });
 
     function naviClass (idx) {
-      let naviId = '#navi' + idx;
+      let naviId = '#' + idx + '-Navi';
       $('.navi').removeClass('navi-Active');
       $(naviId).addClass('navi-Active');
     }

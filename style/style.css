@@ -176,8 +176,7 @@ main#main {
 }
 
 #main #portfolio .marginReceiver {
-    display: inline-block;
-    margin-top: 800px;
+    margin-top: 700px;
 }
 
 #main #portfolio div.inspiredImg {
@@ -234,7 +233,7 @@ main #portfolio .role details span {
     cursor: pointer;
 }
 #wrap #sidebar ul li.navi-Active {
-    background-color: rgba(221, 221, 221, 0.9);
+    background-color: rgba(48, 208, 208, 0.25);
 }
 #wrap #sidebar #sideUl li img {
     width: 25%;
