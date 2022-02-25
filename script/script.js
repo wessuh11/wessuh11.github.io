@@ -4,7 +4,7 @@ $(function() {
   const swiper = new Swiper('.swiper-container', {
       // Optional parameters
       direction: 'vertical',
-      loop: true,
+      loop: false,
       
       // If we need pagination
       pagination: {
@@ -22,8 +22,9 @@ $(function() {
       scrollbar: {
         el: '.swiper-scrollbar',
       },
-      
-      // height: 600,
+
+      hashNavigation: true,
+      rewind: true,
 
       autoHeight: true,
       // freeMode: true,
@@ -32,10 +33,9 @@ $(function() {
       // observer: true,
       // observeParents: true,
       // ResizeObserver: false,
-
     });
     ////////////////////////////////////////////////////// swiper 끝
-    
+    swiper.slideTo(0, 0, false);
     ////////////////////////////////////////////////////// details margin-top 문제 수정시작
 
     function applyMt (marginChange) {
@@ -60,13 +60,15 @@ $(function() {
     ///////////////////////////////////////////////////// nav 시작
     $('.navi').click(function(){
       let idx = $(this).children('input').val();
+      idx = Number(idx);
       swiper.slideTo(idx, 500, false);
-      naviClass(idx);
+      naviClass(idx+1);
     });
 
-    swiper.on('slideChangeTransitionEnd', function(){
-      let idx = $('.swiper-slide-active').attr('data-swiper-slide-index');
-      idx = Number(idx)+1;
+    swiper.on('slideChangeTransitionStart', function(){
+      let idx = $('.swiper-slide-active').attr('data-hash');
+      idx = idx.replace('slide', '');
+      idx = Number(idx);
       naviClass(idx);
     });
 
@@ -76,6 +78,5 @@ $(function() {
       $(naviId).addClass('navi-Active');
     }
     ///////////////////////////////////////////////////// nav 끝
-
 
 });
