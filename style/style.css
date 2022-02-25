@@ -197,8 +197,11 @@ main #portfolio .role details span {
     display: inline-block;
 }
 
-#main #portfolio div.role img {
-    width: 100%;
+#main #portfolio div.role details img {
+    width: 80%;
+    margin: 0 auto;
+
+    display: block;
 }
 /* div#portfolio 끝 */
 
