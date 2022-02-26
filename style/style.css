@@ -65,7 +65,7 @@ div#wrap>* {
 }
 
 #bio #profileTbl tr td  {
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #bio #profileTbl tr:last-child td {
@@ -97,7 +97,7 @@ main#main {
 
 /* div#title 시작 */
 #main #mainSec div#title h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: normal;
     text-align: center;
 }
@@ -105,15 +105,18 @@ main#main {
 
 /* div#profile 시작 */
 #main #profile section#intro {
-    font-size: 20px;
+    font-size: 25px;
 
     align-items: center;
     justify-content: space-around;
 }
 
+#main #profile section#intro h2 {
+    font-size: 30px;
+}
+
 #main #profile #intro #selfIntro {
     width: 40%;
-
 }
 
 /*  연혁 시작 */
@@ -172,7 +175,7 @@ main#main {
 
 /* div#portfolio 시작 */
 #main div#portfolio {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 #main #portfolio .marginReceiver {
@@ -206,6 +209,10 @@ main #portfolio .role details span {
 /* div#portfolio 끝 */
 
 /* div#attribution 시작 */
+#main #attribution h2 {
+    font-size: 35px;
+}
+
 #main #attribution {
     font-size: 25px;
 }
@@ -239,7 +246,7 @@ main #portfolio .role details span {
     background-color: rgba(48, 208, 208, 0.25);
 }
 #wrap #sidebar #sideUl li img {
-    width: 25%;
+    width: 40%;
 }
 /* nav#sidebar 끝 */
 
