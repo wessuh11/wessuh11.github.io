@@ -119,8 +119,12 @@ main#main {
     width: 40%;
 }
 
+#main #profile #intro #selfIntro table tr td {
+border: 1px solid #000;
+}
+
 /*  연혁 시작 */
-#main #profile #intro #selfIntro table tr td:first-child {
+/* #main #profile #intro #selfIntro table tr td:first-child {
     width: 120px;
 }
 
@@ -137,7 +141,7 @@ main#main {
     
     display: inline-block;
     content: "";
-}
+} */
 /* 연혁 끝 */
 #main #profile #intro h2 {
     margin-left: 10px;
